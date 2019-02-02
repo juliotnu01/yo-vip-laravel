@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use GuzzleHttp\Client;
 
 class MessengerController extends Controller
 {
@@ -12,8 +11,7 @@ class MessengerController extends Controller
 
     	$data = $request->all();
 		
-		dd($data);
-
+    	
     }
 
 }
