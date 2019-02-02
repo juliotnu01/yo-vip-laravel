@@ -7,19 +7,12 @@ use GuzzleHttp\Client;
 
 class MessengerController extends Controller
 {
-    public function receive()
+    public function receive(Request $request)
     {
 
-
-		$client = new Client([
-		    // Base URI is used with relative requests
-		    'base_uri' => 'https://bot-yo-vip.herokuapp.com',
-		    // You can set any number of default request options.
-		    'timeout'  => 2.0,
-		]);
+    	$data = $request->all();
 		
-		$response = $client->request('GET', 'webhook');
-		dd($response->getBody());
+		dd($data);
 
     }
 
