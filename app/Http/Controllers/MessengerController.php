@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 
 class MessengerController extends Controller
 {
-    public function receive(Request $request)
+    public function index(Request $request)
     {
 
     	$data = $request->all();
