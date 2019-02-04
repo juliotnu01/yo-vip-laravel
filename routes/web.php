@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 // */
-Route::get('webhook', 'MessengerController@index')->middleware('verifyAccessTokenFacebookBot');
+// Route::get('webhook', 'MessengerController@index')->middleware('verifyAccessTokenFacebookBot');
 // Route::post('webhook', 'MessengerController@receive');
 
 Route::get('/', function () {

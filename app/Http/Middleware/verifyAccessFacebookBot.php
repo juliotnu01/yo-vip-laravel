@@ -17,8 +17,8 @@ class verifyAccessFacebookBot
     {
        if ($request->input("hub_mode") === "subscribe" && $request->input("hub_verify_token") === env("VERIFY_TOKEN")) {
         return response($request->input("hub_challenge"), 200);
+
     }
-    echo  json_encode($request);
     return $next($request);
     }
 }
