@@ -125,7 +125,7 @@
                     <input type="text" placeholder="Type your message here…" />
                 </div>
             </div>
-            <example-component></example-component>
+            <!-- <example-component></example-component> -->
 
         </div>
         <div class="column">
